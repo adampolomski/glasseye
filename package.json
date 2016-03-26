@@ -17,7 +17,10 @@
     "url": "https://github.com/adampolomski/glasseye/issues"
   },
   "dependencies": {
-    "immutable": "^3.7.6"
+    "express": "^4.13.4",
+    "immutable": "^3.7.6",
+    "request": "^2.69.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
