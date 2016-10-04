@@ -1,17 +1,17 @@
-import ChannelRepository from './src/channelRepository';
+import ProductRepository from './src/productRepository';
 
 var express = require('express');
 var app = express();
-var repo = new ChannelRepository();
+var repo = new ProductRepository();
 
 app.set('port', (process.env.PORT || 5000));
 
-app.get('/channels', function(request, response) {
+app.get('/products', function(request, response) {
   repo.list().then(data => { response.send(data); }).catch(() => { response.send('errori');});
 });
 
-app.get('/channels/:channelId', (request, response) => {
-  response.send('Hello channels!' + request.params.channelId);
+app.get('/products/:productId', (request, response) => {
+  response.send('Hello products!' + request.params.productId);
 });
 
 app.listen(app.get('port'), function() {

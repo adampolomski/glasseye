@@ -1,7 +1,7 @@
 {
   "name": "glasseye",
   "version": "1.0.0",
-  "description": "TV scapping",
+  "description": "Price analyzer",
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
