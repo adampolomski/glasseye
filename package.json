@@ -1,35 +1,38 @@
 {
   "name": "glasseye",
   "version": "1.0.0",
-  "description": "TV scapping",
+  "description": "Price analyzer",
+  "engines": {
+    "node": "5.9.1"
+  },
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js",
-    "test": "mocha --compilers js:babel-core/register  --require ./test/test_helper.js  --recursive"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adampolomski/glasseye.git"
+    "url": "git+https://github.com/adampolomski/glasseye.git"
   },
-  "author": "Adam Polomski",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/adampolomski/glasseye/issues"
   },
+  "homepage": "https://github.com/adampolomski/glasseye#readme",
   "dependencies": {
-    "immutable": "^3.7.6"
+    "express": "^4.13.4",
+    "immutable": "^3.7.6",
+    "request": "^2.69.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.6.5",
-    "babel-core": "^6.7.2",
-    "babel-preset-es2015": "^6.6.0",
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-register": "^6.16.3",
     "chai": "^3.5.0",
     "chai-immutable": "^1.5.3",
     "mocha": "^2.4.5"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
   }
 }
