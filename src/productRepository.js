@@ -15,7 +15,7 @@ export default class ProductRepository {
   }
   
   static products() {
-    return new List(Product.of(100));
+    return new List([Product.of(100)]);
   }
 }
 
